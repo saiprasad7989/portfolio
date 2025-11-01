@@ -5,6 +5,8 @@ export const metadata = {
   description: "Download the resume of BTN Sai Prasad - Product professional building B2B SaaS MVPs with expertise in React, NextJS, and LLM integration.",
 };
 
-export const GET = async () => {
+const ResumePageProxy = async () => {
   return redirect(process.env.RESUME_URL || "");
 };
+
+export default ResumePageProxy;
